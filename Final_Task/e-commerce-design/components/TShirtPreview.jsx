@@ -6,12 +6,12 @@ const TShirtPreview = ({ design, tshirtColor, filters }) => {
   const { brightness, contrast, saturation } = filters;
 
   return (
-    <div id="tshirt-preview" className="relative inline-block">
+    <div id="tshirt-preview" className="relative inline-block mt-6">
       <div
-        className="relative bg-transparent"
+        className="relative bg-transparent rounded-lg shadow-md"
         style={{
           backgroundColor: tshirtColor,
-          width: "50vw",
+          width: "38rem",
           height: "40vh",
         }}
       >
@@ -19,12 +19,10 @@ const TShirtPreview = ({ design, tshirtColor, filters }) => {
           src="/tshirt.png"
           alt="T-shirt"
           layout="fill"
-          // objectFit="contain"
           style={{ mixBlendMode: "multiply" }}
         />
       </div>
 
-      {/* Draggable/Resizable Design */}
       {design && (
         <Rnd
           default={{
@@ -38,6 +36,7 @@ const TShirtPreview = ({ design, tshirtColor, filters }) => {
           <img
             src={design}
             alt="Design"
+            className="absolute"
             style={{
               width: "100%",
               height: "100%",

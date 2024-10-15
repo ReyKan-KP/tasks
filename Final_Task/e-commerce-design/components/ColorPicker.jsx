@@ -6,16 +6,16 @@ const ColorPicker = ({ setTshirtColor }) => {
   };
 
   return (
-    <div className="mb-6">
+    <center className="mb-6">
       <label className="block text-sm font-medium text-gray-700 mb-2">
         Choose T-shirt Color
       </label>
       <input
         type="color"
         onChange={handleColorChange}
-        className="w-16 h-16 rounded-lg shadow"
+        className="w-16 h-16 rounded-lg shadow-md focus:ring-2 focus:ring-blue-500"
       />
-    </div>
+    </center>
   );
 };
 

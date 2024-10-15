@@ -10,8 +10,8 @@ const FilterControls = ({ filters, setFilters }) => {
   };
 
   return (
-    <div className="my-4">
-      <div className="mb-2">
+    <div className="my-6 grid grid-cols-1 gap-4">
+      <div>
         <label className="block text-sm font-medium text-gray-700">
           Brightness
         </label>
@@ -22,11 +22,11 @@ const FilterControls = ({ filters, setFilters }) => {
           max="150"
           value={filters.brightness}
           onChange={handleChange}
-          className="w-full"
+          className="w-full focus:ring-2 focus:ring-blue-500"
         />
       </div>
 
-      <div className="mb-2">
+      <div>
         <label className="block text-sm font-medium text-gray-700">
           Contrast
         </label>
@@ -37,11 +37,11 @@ const FilterControls = ({ filters, setFilters }) => {
           max="150"
           value={filters.contrast}
           onChange={handleChange}
-          className="w-full"
+          className="w-full focus:ring-2 focus:ring-blue-500"
         />
       </div>
 
-      <div className="mb-2">
+      <div>
         <label className="block text-sm font-medium text-gray-700">
           Saturation
         </label>
@@ -52,7 +52,7 @@ const FilterControls = ({ filters, setFilters }) => {
           max="150"
           value={filters.saturation}
           onChange={handleChange}
-          className="w-full"
+          className="w-full focus:ring-2 focus:ring-blue-500"
         />
       </div>
     </div>
