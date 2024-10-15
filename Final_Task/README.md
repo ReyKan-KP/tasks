@@ -5,6 +5,9 @@
 
 This is a Next.js e-commerce feature that allows users to upload custom designs, display them on a T-shirt, change the T-shirt color, adjust design filters, and download the final preview.
 
+## Deployed Link
+https://e-commerce-design-hazel.vercel.app/
+
 ### Features
 
 1. **Upload Custom Design**: Users can upload any design (image file) and display it on a mock T-shirt.
