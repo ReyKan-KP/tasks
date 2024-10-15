@@ -3,6 +3,10 @@
 
 A simple yet powerful TODO application built with React and TypeScript. This app allows users to manage their tasks efficiently by adding, deleting, updating, and marking TODOs as completed.
 
+
+## Deployed Link
+https://todo-six-teal.vercel.app/
+
 ## Features
 
 - **Add TODOs**: Easily add new tasks to your list.
