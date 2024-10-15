@@ -36,7 +36,7 @@ This is a Next.js e-commerce feature that allows users to upload custom designs,
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/ReyKan-KP/tasks/tree/main/tshirt-customization.git
+   git clone https://github.com/ReyKan-KP/tasks/tree/main/Final%20Task/e-commerce-design.git
    cd tshirt-customization
    ```
 
