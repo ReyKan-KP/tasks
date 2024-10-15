@@ -37,7 +37,7 @@ This is a Next.js e-commerce feature that allows users to upload custom designs,
 
    ```bash
    git clone https://github.com/ReyKan-KP/tasks/tree/main/Final%20Task/e-commerce-design.git
-   cd tshirt-customization
+   cd e-commerce-design
    ```
 
 2. Install dependencies:
@@ -67,7 +67,6 @@ This is a Next.js e-commerce feature that allows users to upload custom designs,
 - [Tailwind CSS](https://tailwindcss.com/)
 - [React RND](https://github.com/bokuweb/react-rnd) - For draggable and resizable design
 - [html-to-image](https://www.npmjs.com/package/html-to-image) - For converting the preview to an image for download
-- [remove.bg](https://www.remove.bg/) - API for removing image backgrounds
 
 ### Future Enhancements
 
