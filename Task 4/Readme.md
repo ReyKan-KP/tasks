@@ -21,7 +21,7 @@ A simple yet powerful TODO application built with React and TypeScript. This app
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/todo-app.git
+   git clone https://github.com/ReyKan-KP/tasks/tree/main/Task%204/todo-app.git
    cd todo-app
    ```
 
