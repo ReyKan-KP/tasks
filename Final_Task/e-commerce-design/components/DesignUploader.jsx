@@ -7,8 +7,7 @@ const DesignUploader = ({ setDesign }) => {
       const reader = new FileReader();
       reader.onloadend = async () => {
         const imgBase64 = reader.result;
-        const imageWithoutBg = await removeBackground(imgBase64);
-        setDesign(imageWithoutBg || imgBase64);
+        setDesign(imgBase64);
       };
       reader.readAsDataURL(file);
     }

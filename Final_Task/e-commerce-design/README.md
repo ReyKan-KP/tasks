@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+---
 
-First, run the development server:
+## T-Shirt Customization Feature - E-Commerce App
+
+This is a Next.js e-commerce feature that allows users to upload custom designs, display them on a T-shirt, change the T-shirt color, adjust design filters, and download the final preview.
+
+### Features
+
+1. **Upload Custom Design**: Users can upload any design (image file) and display it on a mock T-shirt.
+2. **Change T-shirt Color**: Users can select the T-shirt color using a color picker.
+3. **Draggable & Resizable Design**: The uploaded design can be dragged and resized within the boundaries of the T-shirt.
+4. **Apply Filters**: Users can adjust brightness, contrast, and saturation to blend the design better with the T-shirt.
+5. **Download Preview**: Users can download the final customized T-shirt image as a preview.
+
+### File Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+├── components
+│   ├── ColorPicker.jsx          # Component to select T-shirt color
+│   ├── DesignUploader.jsx        # Upload design component
+│   ├── DownloadButton.jsx        # Button to download the T-shirt preview
+│   ├── FilterControls.jsx        # Controls for applying filters to the design
+│   └── TShirtPreview.jsx         # Main T-shirt preview component with draggable and resizable design
+├── app
+│   └── page.jsx                 # Main page with the full feature
+├── public
+│   └── tshirt.png               # T-shirt mockup image
+├── README.md                    # Documentation
+└── tailwind.config.js           # Tailwind CSS configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   git clone https://github.com/ReyKan-KP/tasks/tree/main/Final%20Task/e-commerce-design.git
+   cd e-commerce-design
+   ```
 
-## Learn More
+2. Install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Run the development server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Usage
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. **Upload a Design**: Click the "Upload Design" button to select an image file.
+2. **Change T-shirt Color**: Choose a T-shirt color using the color picker.
+3. **Adjust Design**: Drag, resize, and adjust the design's brightness, contrast, and saturation to match the T-shirt.
+4. **Download Preview**: After customizing, click the "Download Preview" button to download the T-shirt image with the design.
+
+### Dependencies
+
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React RND](https://github.com/bokuweb/react-rnd) - For draggable and resizable design
+- [html-to-image](https://www.npmjs.com/package/html-to-image) - For converting the preview to an image for download
+
+### Future Enhancements
+
+- Add more filters and advanced image editing options.
+- Include multiple T-shirt styles and preview angles.
+- Support vector design uploads and scaling without quality loss.
+
+
+---
